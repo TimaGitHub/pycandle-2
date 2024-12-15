@@ -20,7 +20,7 @@ np = numpy
 
 class Tensor:
 
-    def __init__(self, value, requires_grad=False, local_gradients=None, dtype=np.float64):
+    def __init__(self, value, requires_grad=False, local_gradients=None, dtype=np.float32):
 
         if not isinstance(value, Tensor):
             self.value = np.array(value, dtype=dtype)

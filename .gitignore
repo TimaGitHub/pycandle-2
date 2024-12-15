@@ -3,9 +3,4 @@
 .venv/
 gpt.py
 test.py
-candle/__pycache__/
-candle/nn/__pycache__/
-candle/optim/__pycache__/
-candle/parameter/__pycache__/
-candle/utils/__pycache__/
-candle/utils/data/__pycache__/
+**/__pycache__/
