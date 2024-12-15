@@ -1,0 +1,6 @@
+.git/
+.idea/
+.venv/
+gpt.py
+test.py
+candle/__pycache__/
