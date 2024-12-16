@@ -61,7 +61,7 @@ class SimpleNet(nn.Module):
 # Instantiate model, loss, and optimizer
 model = SimpleNet()
 loss_fn = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+optimizer = optim.Adam(model, lr=0.001)
 
 if __name__ == '__main__':
     logits = model(x)
