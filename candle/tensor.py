@@ -13,7 +13,7 @@ New class overloads most popular numpy functions ( +, @, ones, reshape etc.)
 So new class also provides all gradient computations with computational graph.
 You can also run all computations on gpu (if available) by setting .to('gpu')
 All gpu computations provided thanks to cupy library.
-a big thanks to this repo: https://github.com/sradc/SmallPebble/blob/main/smallpebble/smallpebble.py#L708 , most of the cool ideas are taken from there
+a big thanks to this repo: https://github.com/sradc/SmallPebble , most of the cool ideas are taken from there
 '''
 
 np = numpy
