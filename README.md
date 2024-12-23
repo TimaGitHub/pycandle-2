@@ -195,6 +195,7 @@ class ConvNet(nn.Module):
 - [ ] Check for the correctness of the convolutional operations.  
 - [ ] Check for the correctness of NAG, RMSProp, Adam.
 - [ ] Provide computational graph for indexing, stack, split, cat, min, max etc... operations.
+- [ ] Add state dictionary
 - [ ] Replace CuPy with Triton or Cuda.
 - [ ] Replace NumPy with C++ library.
 - [ ] Make Embdedding.forward() method more efficient as it is currently impossible to train transformers due to low perfomance of operation.
