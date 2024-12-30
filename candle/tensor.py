@@ -371,6 +371,12 @@ class Tensor:
         return Tensor.exp(z) / Tensor.sum(Tensor.exp(z), axis=axis, keepdims=True)
 
     @classmethod
+    def safe_softmax(cls, z, axis=-1,):
+        sub = z.max(axis=1, keepdims=True)
+        sub.requires_grad = False
+        return cls.softmax(z - sub)
+
+    @classmethod
     def arange(cls, stop, requires_grad=False):
         value = np.arange(stop)
         return cls(value, requires_grad=requires_grad)
